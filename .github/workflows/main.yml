@@ -17,10 +17,12 @@ jobs:
           echo two
 
   depended-build: 
+    runs-on: windows-latest
     needs: build
     steps: 
       - run: echo Hi here depended-build
 
   independed-build:
+    runs-on: windows-latest
     steps: 
       - run: echo Hi here independed-build
