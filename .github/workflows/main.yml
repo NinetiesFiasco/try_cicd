@@ -19,6 +19,9 @@ jobs:
   depended-build: 
     needs: build
     run: this is the problem
+    steps: 
+      - run: echo Hi here depended-build
 
   independed-build:
-    run: echo "Hi here"
+    steps: 
+      - run: echo Hi here independed-build
