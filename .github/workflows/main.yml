@@ -18,7 +18,6 @@ jobs:
 
   depended-build: 
     needs: build
-    run: this is the problem
     steps: 
       - run: echo Hi here depended-build
 
